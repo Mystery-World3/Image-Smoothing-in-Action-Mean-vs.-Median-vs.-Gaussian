@@ -1,45 +1,45 @@
-# 🖼️ Perbaikan Citra CCTV dengan Smoothing & Noise Reduction
+# 🖼️ Image Smoothing in Action: Mean vs. Median vs. Gaussian
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/) [![OpenCV](https://img.shields.io/badge/OpenCV-4.x-blue.svg)](https://opencv.org/) [![NumPy](https://img.shields.io/badge/NumPy-1.2x-blue.svg)](https://numpy.org/)
 
-Repositori ini berisi implementasi dari tugas mata kuliah Pengolahan Sinyal Digital. Tujuannya adalah untuk mendemonstrasikan dan membandingkan efektivitas beberapa teknik dasar *smoothing* untuk mengurangi *salt-and-pepper noise* pada citra CCTV.
+This repository contains a project for a Digital Signal Processing course. Its purpose is to demonstrate and compare the effectiveness of several basic smoothing techniques for reducing salt-and-pepper noise in CCTV images.
 
 ---
 
-## ✨ Fitur Utama
+## ✨ Key Features
 
-- **Pemrosesan Multi-Gambar**: Mampu memproses beberapa gambar sekaligus dalam satu eksekusi.
-- **Simulasi Noise**: Menambahkan *salt-and-pepper noise* secara buatan untuk simulasi kasus nyata.
-- **Perbandingan Filter**: Menerapkan tiga filter populer:
-  - **Mean Filter**: Teknik rata-rata sederhana.
-  - **Median Filter**: Teknik peredam *noise* yang tangguh.
-  - **Gaussian Filter**: Teknik penghalusan dengan hasil yang natural.
-- **Visualisasi Komparatif**: Menampilkan hasil perbandingan secara berdampingan untuk analisis yang mudah.
+- **Multi-Image Processing**: Capable of processing multiple images in a single run.
+- **Noise Simulation**: Artificially adds salt-and-pepper noise to simulate real-world scenarios.
+- **Filter Comparison**: Implements three popular filters:
+  - **Mean Filter**: A simple averaging technique.
+  - **Median Filter**: A robust noise reduction technique.
+  - **Gaussian Filter**: A smoothing technique with natural-looking results.
+- **Comparative Visualization**: Displays a side-by-side comparison for easy analysis.
 
 ---
 
-## 📸 Demonstrasi Hasil
+## 📸 Results Showcase
 
-Berikut adalah contoh hasil perbaikan pada salah satu citra. Terlihat jelas bagaimana **Median Filter** mampu menghilangkan hampir seluruh *noise* sambil tetap menjaga detail gambar.
+Here is an example of the enhancement results on one of the images. It clearly shows how the **Median Filter** successfully removes almost all the noise while preserving image details.
 
-| Citra Asli | Citra dengan Noise | Hasil Median Filter |
+| Original Image | Noisy Image | Median Filter Result |
 | :----------: |:-------------: | :-------------: |
 | <img src="assets/cctv.jpg" width="250"> | <img src="assets/noise.png" width="250"> | <img src="assets/median.png" width="250"> |
 
 
 ---
 
-## 🚀 Instalasi & Persiapan
+## 🚀 Installation & Setup
 
-Untuk menjalankan proyek ini di komputer Anda, ikuti langkah-langkah berikut.
+To run this project on your local machine, follow these steps.
 
-1.  **Kloning repositori ini:**
+1.  **Clone this repository:**
     ```bash
-    git clone https://github.com/Mystery-World3/Image-Smoothing-in-Action-Mean-vs.-Median-vs.-Gaussian.git
+    git clone [https://github.com/Mystery-World3/Image-Smoothing-in-Action-Mean-vs.-Median-vs.-Gaussian.git](https://github.com/Mystery-World3/Image-Smoothing-in-Action-Mean-vs.-Median-vs.-Gaussian.git)
     cd Image-Smoothing-in-Action-Mean-vs.-Median-vs.-Gaussian
     ```
 
-2.  **Buat dan aktifkan *virtual environment* (sangat disarankan):**
+2.  **Create and activate a virtual environment (highly recommended):**
     ```bash
     python -m venv venv
     # Windows
@@ -48,33 +48,33 @@ Untuk menjalankan proyek ini di komputer Anda, ikuti langkah-langkah berikut.
     source venv/bin/activate
     ```
 
-3.  **Instal semua dependensi yang dibutuhkan:**
+3.  **Install all the required dependencies:**
     ```bash
     pip install -r requirements.txt
     ```
 
 ---
 
-## ▶️ Cara Penggunaan
+## ▶️ How to Use
 
-1.  Letakkan file citra Anda (format `.jpg`, `.png`, dll.) di dalam folder `assets`.
-2.  Buka file `cctv.ipynb` menggunakan Jupyter Notebook atau VS Code.
-3.  Perbarui daftar `daftar_file` dengan nama-nama file gambar yang ingin Anda proses.
+1.  Place your image files (e.g., `.jpg`, `.png`) inside the `assets` folder.
+2.  Open the `cctv.ipynb` file using Jupyter Notebook or VS Code.
+3.  Update the `daftar_file` list with the filenames of the images you want to process.
     ```python
-    # Contoh di dalam notebook
+    # Example inside the notebook
     daftar_file = [
         'assets/cctv.jpg', 
         'assets/cctv2.jpg',
-        # Tambahkan file Anda di sini...
+        # Add your files here...
     ]
     ```
-4.  Jalankan semua sel di dalam notebook untuk melihat hasilnya secara langsung!
+4.  Run all cells in the notebook to see the results instantly!
 
 ---
 
-## 🧑‍💻 Tim Pengembang
+## 🧑‍💻 Development Team
 
-Proyek ini merupakan hasil kolaborasi dari:
+This project is a collaborative work by:
 
 * Muhammad Akmal Najib Gunawan
 * Mhd Nursdin Al-kahfi
@@ -85,6 +85,6 @@ Proyek ini merupakan hasil kolaborasi dari:
 
 ---
 
-## 📄 Lisensi
+## 📄 License
 
-Proyek ini dilisensikan di bawah Lisensi MIT. 
+This project is licensed under the MIT License.
