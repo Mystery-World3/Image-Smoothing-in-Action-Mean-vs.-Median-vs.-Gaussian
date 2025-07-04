@@ -24,7 +24,7 @@ Berikut adalah contoh hasil perbaikan pada salah satu citra. Terlihat jelas baga
 
 | Citra Asli | Citra dengan Noise | Hasil Median Filter |
 | :----------: |:-------------: | :-------------: |
-| <img src="assets/cctv.jpg" width="250"> | <img src="https://i.imgur.com/gK9pBGr.png" width="250"> | <img src="https://i.imgur.com/3Yp7BqV.png" width="250"> |
+| <img src="assets/cctv.jpg" width="250"> | <img src="assets/noise.png" width="250"> | <img src="assets/median.png" width="250"> |
 
 
 ---
